@@ -621,7 +621,7 @@ logging:
 
 # Linux high speed capture support
 af-packet:
-  - interface: ำะ้จ
+  - interface: eth0
     # Number of receive threads. "auto" uses the number of cores
     #threads: auto
     # Default clusterid. AF_PACKET will load balance packets based on flow.
@@ -2199,7 +2199,7 @@ default-rule-path: /var/lib/suricata/rules
 
 rule-files:
   - suricata.rules
-##  - /var/lib/suricata/rules/local.rules
+  - /etc/suricata/rules/*.rules
 
 ##
 ## Auxiliary configuration files.
